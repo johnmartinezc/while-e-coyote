@@ -4,8 +4,6 @@ const prompt = require('prompt-sync')
 
 let number = Number(prompt("Enter a number: "))
 
-let x = 0
-
 while(number <= 100 ){
     if(number *= 2){
 
