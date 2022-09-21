@@ -2,19 +2,19 @@ const prompt = require('prompt-sync')
 ({sigint: true})
 
 let pickNumber = Number(prompt('Enter a positive number: '))
-let n1 = 0
-let n2 = 1
-let nextTerm = 0
+let num = 0
+let numTwo = 1
+let both = 0
 
 console.log('Fibonacci Series:')
 
-nextTerm = n1 + n2
+both = num + numTwo
 
-while (nextTerm <= pickNumber) {
+while (both <= pickNumber) {
 
-    console.log(nextTerm)
+    console.log(both)
 
-    n1 = n2
-    n2 = nextTerm
-    nextTerm = n1 + n2
+    num = numTwo
+    numTwo = both
+    both = num + numTwo
 }
