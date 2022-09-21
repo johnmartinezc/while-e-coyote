@@ -3,11 +3,13 @@ const prompt = require('prompt-sync')
 
 console.log("Enter some numbers (type 'done' when complete)")
 
-let number = prompt(Number(">"))
+let number = Number(prompt("> "))
 
-while(number !== 'done'){
-    number = prompt()
-    if (number === 'done'){
-        console.log("the numbers add up to " + number)
-    }
+let sum = 0
+
+while(number > 0){
+
+    sum += number
+    number = Number(prompt("> "))
 }
+console.log("Those numbers sum to " + sum)
